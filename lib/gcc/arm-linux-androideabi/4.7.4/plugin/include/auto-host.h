@@ -1701,7 +1701,7 @@
 
 /* Specify plugin linker */
 #ifndef USED_FOR_TARGET
-#define PLUGIN_LD "ld-new"
+#define PLUGIN_LD_SUFFIX "ld-new"
 #endif
 
 
