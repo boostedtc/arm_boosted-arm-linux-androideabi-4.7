@@ -1,0 +1,7 @@
+/* Generated automatically. */
+static const char configuration_arguments[] = ".././../gcc/gcc-Boosted/configure --prefix=/tmp/arm-linux-androideabi --target=arm-linux-androideabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-pkgversion=Boosted-Toolchain --with-gmp=/home/hieu/toolchains/google/build/temp-install --with-mpfr=/home/hieu/toolchains/google/build/temp-install --with-mpc=/home/hieu/toolchains/google/build/temp-install --without-ppl --without-cloog --without-isl --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=neon --with-arch=armv5te --enable-target-optspace --prefix=/tmp/arm-linux-androideabi --with-gcc-version=Boosted --with-binutils-version=2.25 --enable-plugins --with-gmp-version=current --with-mpfr-version=current --with-gdb-version=7.7 --with-mpc-version=current --with-cloog-version=current --with-isl-version=0.11.1 --with-sysroot=/ --enable-threads=posix --disable-libquadmath --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-gold-version=2.25 --enable-gold=yes --enable-gold=default --program-transform-name='s&^&arm-linux-androideabi-&'";
+static const char thread_model[] = "posix";
+
+static const struct {
+  const char *name, *value;
+} configure_default_options[] = { { "arch", "armv5te" }, { "float", "soft" }, { "fpu", "neon" }, { "tls", "gnu" } };
