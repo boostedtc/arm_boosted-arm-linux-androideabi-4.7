@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/tmp/arm-linux-androideabi/libexec/gcc/arm-linux-androideabi/4.7.4'
+libdir='/tmp/arm-linux-androideabi-4.7/libexec/gcc/arm-linux-androideabi/4.7.4'
