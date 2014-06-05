@@ -14430,7 +14430,7 @@ File: as.info,  Node: MSP430 Options,  Next: MSP430 Syntax,  Up: MSP430-Dependen
      instruction that might change the interrupts enabled/disabled
      state.  This is the default behaviour.
 
-'-mz'
+'-my'
      tells the assembler to generate a warning message if a NOP does not
      immediately forllow an instruction that enables or disables
      interrupts.  This is the default.
@@ -14439,7 +14439,7 @@ File: as.info,  Node: MSP430 Options,  Next: MSP430 Syntax,  Up: MSP430-Dependen
      the assembler will both warn about missing NOP instructions and
      then insert them automatically.
 
-'-mZ'
+'-mY'
      disables warnings about missing NOP instructions.
 
 '-md'
