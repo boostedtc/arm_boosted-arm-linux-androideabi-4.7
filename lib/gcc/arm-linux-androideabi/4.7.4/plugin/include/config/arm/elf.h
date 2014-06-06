@@ -17,10 +17,6 @@
    or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
    License for more details.
 
-   Under Section 7 of GPL version 3, you are granted additional
-   permissions described in the GCC Runtime Library Exception, version
-   3.1, as published by the Free Software Foundation.
-
    You should have received a copy of the GNU General Public License
    along with GCC; see the file COPYING3.  If not see
    <http://www.gnu.org/licenses/>.  */
@@ -104,8 +100,7 @@
    the code more efficient, but for Thumb-1 it's better to put them out of
    band unless we are generating compressed tables.  */
 #define JUMP_TABLES_IN_TEXT_SECTION					\
-   (TARGET_32BIT || (TARGET_THUMB && !inline_thumb1_jump_table		\
-                    && (optimize_size || flag_pic)))
+   (TARGET_32BIT || (TARGET_THUMB && (optimize_size || flag_pic)))
 
 #ifndef LINK_SPEC
 #define LINK_SPEC "%{mbig-endian:-EB} %{mlittle-endian:-EL} -X"

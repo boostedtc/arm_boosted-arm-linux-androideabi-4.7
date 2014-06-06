@@ -19,10 +19,6 @@
    or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
    License for more details.
 
-   Under Section 7 of GPL version 3, you are granted additional
-   permissions described in the GCC Runtime Library Exception, version
-   3.1, as published by the Free Software Foundation.
-
    You should have received a copy of the GNU General Public License
    along with GCC; see the file COPYING3.  If not see
    <http://www.gnu.org/licenses/>.  */
@@ -1856,11 +1852,10 @@ typedef struct
 
 #define CASE_VECTOR_PC_RELATIVE (TARGET_THUMB2				\
 				 || (TARGET_THUMB1			\
-				     && !inline_thumb1_jump_table	\
 				     && (optimize_size || flag_pic)))
 
 #define CASE_VECTOR_SHORTEN_MODE(min, max, body)			\
-  (TARGET_THUMB1 && !inline_thumb1_jump_table				\
+  (TARGET_THUMB1							\
    ? (min >= 0 && max < 512						\
       ? (ADDR_DIFF_VEC_FLAGS (body).offset_unsigned = 1, QImode)	\
       : min >= -256 && max < 256					\
